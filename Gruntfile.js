@@ -22,11 +22,11 @@ module.exports = function(grunt) {
 				spawn: false, 
 			}
 		} 
-	},
+	} //,
     jshint: {
       all: ['js/*.js']
     }
-	});
+	 });
 	// Load the plugins tasks
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
