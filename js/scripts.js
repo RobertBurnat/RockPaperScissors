@@ -51,7 +51,6 @@ function newGame() {
 		player.score = computer.score = 0;
 		gameState = 'started';
 		setGameElements();
-
 		playerNameElem.innerHTML = player.name;
 		setGamePoints();
 	}
@@ -115,5 +114,10 @@ function setWinner () {
 		alert('Winner is computer');
 		gameState = 'ended';
 		setGameElements();
+	}
+	if (player.score == 5 || computer.score ==5) {
+		computerPickElem.innerHTML = 'Computer selection';
+		computerResultElem.innerHTML = playerResultElem.innerHTML = '';
+		playerPickElem.innerHTML = 'Player selection';
 	}
 }
